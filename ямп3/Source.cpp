@@ -86,10 +86,11 @@ int main()
 	cout << "Введите количество элементов" << endl;
 	cin >> k;
 	cout << "Введите имена" << endl;
-	cin >> x;
+	getline(cin, x);
 	Node* p = initList(x);
 	for (int i = 0; i < k - 1; i++) {
-		cin >> x;
+		getline(cin, x);
+
 		add(p, x);
 	}
 	Node* temp = p;
